@@ -1,4 +1,4 @@
 name: "AI Code Review"
 runs:
-  using: "node16"
-  main: "index.js"
+  using: "node24"
+  main: "src/index.js"
