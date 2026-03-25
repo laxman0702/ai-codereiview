@@ -1,4 +1,12 @@
 name: "AI Code Review"
+description: "Analyze pull request code and provide AI-based review comments"
+
+author: "laxman0702"
+
 runs:
-  using: "node16"
-  main: "index.js"
+  using: "node24"
+  main: "dist/index.js"
+
+branding:
+  icon: "check-circle"
+  color: "blue"
