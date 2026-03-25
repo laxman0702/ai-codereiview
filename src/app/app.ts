@@ -8,5 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
+  console.log('App component initialized');
+  console.log("hello");
   protected readonly title = signal('ai-review-demo');
 }
