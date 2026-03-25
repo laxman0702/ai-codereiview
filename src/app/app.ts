@@ -9,6 +9,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   console.log('App component initialized');
-  console.log("hello");
+  console.log("hello  test");
   protected readonly title = signal('ai-review-demo');
 }
