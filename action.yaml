@@ -1,4 +1,4 @@
 name: "AI Code Review"
 runs:
-  using: "node16"
+  using: "node20"
   main: "dist/index.js"
