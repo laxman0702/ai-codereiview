@@ -9,6 +9,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   //console.log('App component initialized');
-alert('App component initialized');
+alert('App component initializedfff');
   protected readonly title = signal('ai-review-demo');
 }
