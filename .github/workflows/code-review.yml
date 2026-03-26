@@ -13,22 +13,20 @@ jobs:
       pull-requests: write
 
     steps:
-      # Checkout code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Setup Node
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # ✅ ADD HERE (THIS IS YOUR FIX)
-      - name: Install dependencies
+      # ✅ FIXED INSTALL STEP
+      - name: Install dependencies (force clean)
         run: |
-          npm ci || npm install --legacy-peer-deps
+          rm -rf node_modules package-lock.json
+          npm install --legacy-peer-deps
 
-      # Run your AI Action
       - name: Run AI Code Review
         uses: laxman0702/ai-codereiview@main
         env:
